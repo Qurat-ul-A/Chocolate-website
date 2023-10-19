@@ -1,0 +1,270 @@
+@import url('https://fonts.googleapis.com/css2?family=Courgette&family=Gabarito&family=Inclusive+Sans&family=Montserrat&family=Poppins&family=Roboto&family=Space+Grotesk&family=Ubuntu&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-transform: capitalize;
+    transition: all 0.5s linear;
+    font-family: 'Gabarito', sans-serif;
+    font-family: 'Ubuntu', sans-serif;
+}
+.main{
+    height: 80vh;
+    width: 100%;
+    background-image: linear-gradient(rgb(4 3 3/60%),
+    rgb(0 0 0/33%)),url(img/pic.webp);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+.navbar{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    height: 100px;
+    padding: 0 5%;
+}
+.navbar li{
+    display: inline;
+    padding: 0 15px;
+}
+.navbar li a{
+    text-decoration: none;
+    color: whitesmoke;
+    font-size: 23px;
+    padding: 4px;
+}
+.navbar li a:hover{
+    color: #C19A6B;
+}
+.burger{
+    display: none;
+    position: absolute;
+    top: 15px;
+    right: 5%;
+    cursor: pointer;
+    font-size: 33px;
+    color: antiquewhite;
+}
+.btn{
+    padding: 12px 39px;
+    background-color: chocolate;
+    color: white;
+    border: none;
+    font-size: 18px;
+    cursor: pointer;
+}
+.btn:hover{
+    background-color: #9c8c7a;
+    color: black;
+}
+.main-heading{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    flex-direction: column;
+    width: 40%;
+    margin: auto;
+    height: 60vh;
+}
+.para{
+    color: #9c8c7a;
+    letter-spacing: 2px;
+}
+.heading{
+    color: #ff6b00;
+    font-size: 75px;
+    font-family: 'Courgette', cursive;
+}
+.mid-para{
+    font-size: 11px;
+    color: #9c8c7a;
+    padding: 2% 0;
+}
+.btn1{
+    border-radius: 20px;
+    letter-spacing: 1px;
+    margin-top: 2%;
+}
+/* ________sec_________ */
+.sec{
+    width: 80%;
+    margin: auto;
+    text-align: center;
+    padding: 3% 0;
+}
+.row{
+    display: flex;
+    justify-content: center;
+    margin: 2% 0;
+}
+.img{
+    width: 40%;
+}
+.row img{
+    width: 80%;
+}
+.boxes{
+    width: 35%;
+    align-self: center;
+    text-align: left;
+}
+.boxes h1{
+    color: rgb(57,36,36);
+    font-size: 30px;
+}
+.sec .heading{
+    color: rgb(92,44,10);
+    font-size: 50px;
+}
+/* ________-types_______ */
+.box{
+    flex-basis: 17%;
+    margin: 0 30px;
+    box-shadow: rgba(100,100,111,0.2) 0px 7px 29px 0px;
+}
+.box h2{
+    background-color: #3d1f0a;
+    color: white;
+    padding: 12px 0px;
+}
+/* ___--about________ */
+.about{
+    background: url(img/pic1.jpg) no-repeat center center/cover;
+    height: 45vh;
+    margin-bottom: 5%;
+    position: relative;
+}
+.about-box{
+    position: absolute;
+    top: 56%;
+    width: 50%;
+    left: 25%;
+    padding: 12px;
+    background-color: whitesmoke;
+}
+/* _______comments_______ */
+.comments{
+    width: 100%;
+}
+.c-box{
+    background: url(img/pic.webp);
+    color: whitesmoke;
+    font-size: 12px;
+    text-align: left;
+}
+.c-box p{
+    padding: 19px 12px;
+}
+.c-box h3{
+    color: #3d1f0a;
+    background-color: white;
+    padding: 6px;
+    font-size: 20px;
+}
+/* _______contact______ */
+.contact{
+    background: url(img/pic2.jpg) no-repeat center center/cover;
+    width: 100%;
+    height: 50vh;
+    padding: 0;
+    margin-top: 10%;
+    position: relative;
+}
+.Con-box{
+    background-color: #3d1f0a;
+    position: absolute;
+    width: 50%;
+    margin: auto;
+    height: 300px;
+    top: -25%;
+    left: 25%;
+    padding: 35px 0;
+}
+.Con-box .heading{
+    color: white;
+}
+.Con-box .icons{
+    color: #9c8c7a;
+    margin: 5%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.icons div{
+    padding: 0px 13px;
+    overflow: hidden;
+    cursor: pointer;
+}
+.icons i{
+    display: block;
+    padding: 12px 0px;
+    font-size: 26px;
+}
+.icons div:hover{
+    color: white;
+}
+@media only screen and (max-width:820px){
+    .burger{
+        display: block;
+    }
+    .navbar{
+        position: absolute;
+        height: 80vh;
+        width: 200px;
+        top: 0;
+        flex-direction: column;
+        right: 0;
+        text-align: left;
+        justify-content: center;
+        transition: all 1s ease-in-out;
+        background-color: black;
+    }
+    .navbar li a{
+        padding: 18% 0;
+        display: block;
+    }
+    .navbar .btn{
+        padding: 15px 24px;
+    }
+    .h-class{
+        height: 100vh;
+        opacity: 0;
+    }
+    .v-class{
+        opacity: 0;
+    }
+    .main-heading {
+    height: 80vh;
+    }
+    .row{
+        flex-direction: column;
+        align-items: center;
+    }
+    .boxes,.img {
+        width:80%;
+        padding-bottom: 2%;   
+    }
+    .box{
+        margin: 10px 30px;
+    }
+    .comments{
+        width: 50%;
+        margin: 8% auto;
+    }
+    .about-box{
+        top: 30%;
+        width: 72%;
+        left: 14%;
+    }
+    .Con-box{
+        width: 70%;
+        left: 15%;
+    }
+    .contact{
+        height: 50vh;
+    }
+
+}
