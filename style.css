@@ -206,6 +206,13 @@
 .icons div:hover{
     color: white;
 }
+@media only screen and (max-width:1072px){
+    .about-box {
+        top: 45%;
+        width: 65%;
+        left: 18%;
+    }
+}
 @media only screen and (max-width:820px){
     .burger{
         display: block;
@@ -252,7 +259,7 @@
     }
     .comments{
         width: 50%;
-        margin: 8% auto;
+        margin: 4% auto;
     }
     .about-box{
         top: 30%;
@@ -266,5 +273,32 @@
     .contact{
         height: 50vh;
     }
+    .main-heading{
+        width: 60%;
+    }
 
+}
+@media only screen and (max-width:500px){
+.main-heading{
+    width: 80%;
+}
+.heading{
+    font-size: 60px;
+}
+.comments{
+    width: 80%;
+    margin: 10% auto;
+}
+.mid-para{
+    font-size: 10px;
+}
+.about-box {
+    width: 87%;
+    left: 7%;
+}
+.Con-box {
+    width: 88%;
+    left: 6%;
+    bottom: 20px;
+}
 }
